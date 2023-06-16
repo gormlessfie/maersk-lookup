@@ -56,7 +56,7 @@ def format_date(date):
     date_object = datetime.strptime(date, "%d %b %Y %H:%M")
 
     # Format the date as "month/day"
-    formatted_date = date_object.strftime("%m/%d").replace("0", "")
+    formatted_date = date_object.strftime("%m/%d")
     return formatted_date
 
 # Setup Selenium
