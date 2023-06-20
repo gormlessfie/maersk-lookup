@@ -68,6 +68,7 @@ list_tracking_numbers = open('list-trackers.txt', 'r').readlines()
 workbook = Workbook()
 worksheet = workbook.active
 worksheet.title = "Shipping Date Changes"
+worksheet.column_dimensions['A'].width = 25
 
 clears_cookies_page(driver)
 
